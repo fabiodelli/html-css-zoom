@@ -60,8 +60,8 @@ img{
     position: absolute;
     left: 0;
     bottom: 0.3rem;
-    padding: 0.2rem;
-    background:  rgba(0,0,0,0.2);
+    padding: 0.3rem;
+    background:  rgba(0,0,0,0.3);
     color: white;
 }
 
@@ -80,4 +80,35 @@ footer{
     left: 0;
     bottom:0;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lower-band-left{
+    display: flex;
+    
+
+}
+
+.lower-band-centre{
+    display: flex;
+    
+}
+
+.lower-band-right{
+    display: flex;
+    color: red;
+    line-height: 100%;
+    background-color: rgb(78, 77, 77);
+    height: 100px;
+    align-items:center;
+    padding:1rem;
+
+    
+}
+
+.items{
+    margin: 1rem;
+    text-align: center;
 }
