@@ -7,6 +7,10 @@
     
 }
 
+body{
+    overflow-y: hidden;
+}
+
 /* utility */
 
 .text-white{
@@ -16,23 +20,16 @@
 .m-t{
     vertical-align: center;
 }
+.green-text{
+    color: green;
+}
 
 /* Header------------------------------------- */
 
 header{
-    height: 5vh;
+    height: 2.5rem;
     position: relative;
-}
-
-.upper-band{
-    height: 100px;
-    width: 100%;
-    background-color: rgb(53, 53, 53);
-    position: fixed;
-    left: 0;
-    top:0;
-    z-index: 1;
-
+    background: rgb(20, 20, 20);
 }
 
 /* Main---------------------------------------- */
@@ -41,17 +38,18 @@ header{
     width: 100%;
     display: flex;
     flex-wrap: wrap ;
-    padding: 4rem;
+    padding: 3rem 4rem;
     overflow-y:hidden;
-    margin-top: 1rem;
     background: black;
     position: relative;
+    justify-content: center;
 }
 
 .view{
-    padding: 0.2rem;
+    padding: 0.1rem;
     width: calc(100%/7);
-    display: inline-block;
+    max-height: 7.8rem;
+    display: flex;
     position: relative;
 }
 
@@ -71,63 +69,77 @@ img{
 .speaker-view-position{
     color: white;
     position: absolute;
-    top: 2rem;
+    top: 1rem;
     right: 1rem;
 }
+
+.speaker-view-position span{
+    background: gray;
+    padding: 0.2rem;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    vertical-align: middle;
+}
+
+.speaker-view-position span i{
+    font-size: 0.7rem;
+    justify-self: center
+    ;
+}
+
 
 /* Footer--------------------------------------- */
 
 footer{
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
     width: 100%;
-    height: 5vh;
+    bottom: 0vh;
+    
+    
 }
 
 .lower-band{
-    height: 100px;
     width: 100%;
-    background-color: rgb(53, 53, 53);
-    position: fixed;
-    left: 0;
-    bottom:0;
-    z-index: 1;
-    display: flex;
-    align-items: center;
+    display: flex; 
     justify-content: space-between;
+    background: #1b1b1b;
+    
 }
 
 .lower-band-left{
     display: flex;
-    
-
 }
 
 .lower-band-centre{
     display: flex;
-    
 }
 
 .lower-band-right{
     display: flex;
+    background-color: #383838;
     color: red;
-    line-height: 100%;
-    background-color: rgb(78, 77, 77);
-    height: 100px;
-    align-items:center;  
+    align-items: center;
+}
+
+.lower-lower-band{
+    height: 2.5rem;
+    width: 100%;
+    
+    
 }
 
 .items{
     margin: 1rem;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .items:hover{
     cursor: pointer;
 }
 
-.speaker-view-position span{
-    background: gray;
-    padding: 0.4rem;
-    border-radius: 50px;
-    font-size: 15px;
-}
+
+
