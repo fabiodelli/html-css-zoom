@@ -26,6 +26,10 @@ body{
      margin-top: 1rem;
 }
 
+.font-size{
+    font-size: 5px;
+}
+
 
 /* Header------------------------------------- */
 
@@ -93,9 +97,14 @@ img{
     position: absolute;
     left: 0;
     bottom: 0.3rem;
-    padding: 0.3rem;
+    padding: 0.2rem;
     background:  rgba(0,0,0,0.3);
     color: white;
+    border-top-right-radius: 5px;
+}
+
+.mic-pos div,i{
+    font-size: 12px;
 }
 
 
